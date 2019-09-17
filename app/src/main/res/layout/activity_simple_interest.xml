@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_interest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simeon_dee.simplemathsolver.SimpleInterest">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIMPLE INTEREST"
+            android:gravity="center_horizontal"
+            android:textSize="32sp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="24dp"
+            android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Principal (#)"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:textSize="23sp"
+            android:paddingRight="16dp"/>
+
+        <EditText
+            android:id="@+id/edPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rate (%)"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:textSize="23sp"
+            android:paddingRight="16dp"/>
+
+        <EditText
+            android:id="@+id/edRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time (yrs)"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:textSize="23sp"
+            android:paddingRight="16dp"/>
+
+        <EditText
+            android:id="@+id/edTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGetInterest"
+            android:text="Get Interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="23sp"
+            android:padding="16dp"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:onClick="calculateInterestButtonHandler"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:text="Clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:onClick="clearButtonHandler"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutInterestOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest = "
+            android:gravity="left"
+            android:textSize="32sp"
+            android:paddingRight="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvInterest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ans"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:paddingRight="16dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

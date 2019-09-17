@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/itmSimpleInterest"
+            android:onClick="handleMenu"
+            android:title="Simple Interest" />
+
+        <item
+            android:id="@+id/itmAreaOfCircle"
+            android:onClick="handleMenu"
+            android:title="Area Of Circle" />
+
+        <item
+            android:id="@+id/itmQuadratic"
+            android:onClick="handleMenu"
+            android:title="Quadratic Equation" />
+
+        <item
+            android:id="@+id/itmQuiz"
+            android:onClick="handleMenu"
+            android:title="Math Quiz" />
+    </group>
+
+    <item android:id="@+id/itmExit"
+        android:title="Exit"
+        android:onClick="handleMenu" />
+
+</menu>
